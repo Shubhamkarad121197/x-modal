@@ -1,4 +1,6 @@
 import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./App.css";
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
 
   return (
     <>
-      <div className="modal-container">
+      <div className="modal-container text-center mt-5">
         <h1>User Details Form</h1>
         <button
           type="button"
@@ -34,6 +36,8 @@ function App() {
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
+        data-bs-backdrop="true"
+        data-bs-keyboard="true"
       >
         <div className="modal-dialog">
           <div className="modal-content">
@@ -50,10 +54,10 @@ function App() {
                   submitDetails();
                 }}
               >
-                <div className="input-group">
-                  <label htmlFor="userName">Username</label> <br />
+                <div className="input-group mb-3">
+                  <label htmlFor="username">Username</label> <br />
                   <input
-                    id="userName"
+                    id="username"
                     type="text"
                     value={userName}
                     onChange={(e) => setUserName(e.target.value)}
@@ -61,7 +65,7 @@ function App() {
                   />
                 </div>
 
-                <div className="input-group">
+                <div className="input-group mb-3">
                   <label htmlFor="email">Email Address</label> <br />
                   <input
                     id="email"
@@ -72,10 +76,10 @@ function App() {
                   />
                 </div>
 
-                <div className="input-group">
-                  <label htmlFor="phoneNumber">Phone Number</label> <br />
+                <div className="input-group mb-3">
+                  <label htmlFor="phone">Phone Number</label> <br />
                   <input
-                    id="phoneNumber"
+                    id="phone"
                     type="text"
                     value={phoneNumber}
                     onChange={(e) => setPhoneNumber(e.target.value)}
@@ -83,10 +87,10 @@ function App() {
                   />
                 </div>
 
-                <div className="input-group">
-                  <label htmlFor="date">Date of Birth</label> <br />
+                <div className="input-group mb-3">
+                  <label htmlFor="dob">Date of Birth</label> <br />
                   <input
-                    id="date"
+                    id="dob"
                     type="date"
                     value={date}
                     onChange={(e) => setDate(e.target.value)}
@@ -97,7 +101,7 @@ function App() {
                 <div className="modal-footer justify-content-center">
                   <button
                     type="submit"
-                    className="btn btn-primary"
+                    className="btn btn-primary submit-button"
                     data-bs-dismiss="modal"
                   >
                     Submit
