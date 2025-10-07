@@ -46,7 +46,7 @@ function App() {
 
       {/* ✅ Conditionally render modal so it's removed when closed */}
       {showModal && (
-        <div className="modal-overlay">
+        <div className="modal-overlay modal">
           <div className="modal-dialog" ref={modalRef}>
             <div className="modal-content">
               <div className="modal-header justify-content-center">
