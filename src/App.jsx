@@ -1,6 +1,4 @@
 import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./App.css";
 
 function App() {
@@ -30,8 +28,9 @@ function App() {
         </button>
       </div>
 
+      {/* Bootstrap Modal */}
       <div
-        className="modal fade"
+        className="modal"
         id="exampleModal"
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
