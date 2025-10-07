@@ -35,7 +35,7 @@ function App() {
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
-        data-bs-backdrop="static"
+        data-bs-backdrop="true"
        
         data-bs-keyboard="true"
       >
