@@ -35,7 +35,8 @@ function App() {
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
-        data-bs-backdrop="true"
+        data-bs-backdrop="static"
+       
         data-bs-keyboard="true"
       >
         <div className="modal-dialog">
